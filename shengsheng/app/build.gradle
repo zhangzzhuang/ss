@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+android {
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.example.lenovo.myapplication"
+        minSdkVersion 15
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        ndk{
+            abiFilters "armeabi", "armeabi-v7a", "x86", "mips"
+        }
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    configurations.all {
+        resolutionStrategy.force 'com.android.support:support-v4:27.1.0'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:+'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    implementation 'com.github.bumptech.glide:okhttp3-integration:4.6.1'
+    implementation 'com.squareup.okhttp3:okhttp:3.9.1'
+    implementation 'com.google.code.gson:gson:2.2.4'
+    implementation 'com.github.bumptech.glide:glide:4.5.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    //轮播图
+    implementation 'com.youth.banner:banner:+'
+    //百度地图
+    implementation files('libs/BaiduLBS_Android.jar')
+    //butterknife
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    //eventbus
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    implementation 'com.android.support:multidex:1.0.1'
+    //gilde
+    implementation 'com.github.bumptech.glide:glide:4.3.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.3.1'
+    //    RecyclerView实现瀑布流
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    //SmartRefreshLayout
+    api 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.5.1'
+    api project(path: ':library')
+    implementation files('libs/tbs_sdk_thirdapp_v3.6.0.1310_43612_sharewithdownload_withoutGame_obfs_20180706_163319.jar')
+}
+

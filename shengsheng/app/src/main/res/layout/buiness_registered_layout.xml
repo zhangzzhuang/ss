@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+
+    <TextView
+        android:background="@drawable/background_login"
+        android:id="@+id/Buiness_register_back"
+        android:textColor="@android:color/white"
+        android:paddingLeft="10dp"
+        android:paddingTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="@string/return1"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:text="欢迎注册省省商家"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:src="@drawable/morentouxiang"
+        android:layout_marginTop="15dp"
+        android:id="@+id/topImage"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:layout_gravity="center"
+        android:text="(请先键入用户名再上传头像)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+<LinearLayout
+    android:layout_marginTop="10dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+
+        android:layout_gravity="center"
+        android:id="@+id/Buiness_Register_username"
+        android:hint="@string/buiness_name"
+        android:layout_width="250dp"
+        android:ems="10"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_gravity="center"
+        android:id="@+id/Buiness_name_1"
+        android:hint="@string/buiness_name1"
+        android:layout_width="250dp"
+        android:ems="10"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/Buiness_Register_password"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:textCursorDrawable="@drawable/edit_cursor_color"
+        android:hint="@string/buiness_code"
+        android:digits="0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
+        android:inputType="textPassword"
+        android:maxLength="9"/>
+
+    <EditText
+        android:layout_gravity="center"
+        android:id="@+id/Buiness_confirm_password"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/buiness_confrim"
+        android:digits="0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
+        android:inputType="textPassword"
+        android:maxLength="9"/>
+
+    <EditText
+        android:layout_gravity="center"
+        android:hint="@string/buiness_phone"
+        android:id="@+id/Buiness_phone"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <EditText
+        android:layout_gravity="center"
+        android:hint="@string/buiness_address"
+        android:id="@+id/Buiness_address"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPostalAddress" />
+    <Button
+        android:id="@+id/Business_map_xy"
+        android:background="@drawable/shape"
+        android:text="选择地址"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>
+
+    <Button
+        android:textColor="@android:color/white"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:id="@+id/Buiness_register"
+        android:text="@string/register"
+        android:background="@drawable/shape"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

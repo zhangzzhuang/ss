@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.lenovo.myapplication">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/TranslucentTheme">
+        <activity android:name=".mvp.main.view.activity.WelcomePageActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+       <activity android:name=".mvp.main.view.activity.MainActivity"></activity>
+        <activity android:name=".mvp.user.activity.SettingActivity"></activity>
+        <activity android:name=".mvp.user.activity.GoodsdetialActivity"></activity>
+        <activity android:name=".mvp.business.activity.GoodsContentActivity"></activity>
+        <activity android:name=".mvp.user.activity.UpdateActivity"></activity>
+        <activity android:name=".mvp.user.activity.CollectedActivity"></activity>
+        <activity android:name=".mvp.user.activity.UserRegisterActivty"></activity>
+        <activity android:name=".mvp.user.activity.UserLoginActivity"></activity>
+        <activity android:name=".mvp.user.activity.ServiceActivity"></activity>
+        <activity android:name=".mvp.user.activity.ShopdetialActivity"></activity>
+        <activity android:name=".mvp.user.activity.MessageActivity"></activity>
+        <activity android:name=".mvp.user.activity.SearchActivity"/>
+        <activity android:name=".mvp.user.activity.SearchShopdetialActivity"/>
+        <activity android:name=".mvp.business.activity.BuinessActivity"/>
+        <activity android:name=".mvp.business.activity.BuinessRegisterActivity"/>
+        <activity android:name=".mvp.business.activity.AddGoodsActivity"/>
+        <activity android:name=".mvp.business.activity.BusinessLoginActivity"/>
+        <activity android:name=".mvp.user.activity.ShopGoodsTypeActivity"/>
+        <activity android:name=".map.UserLocation"/>
+        <activity android:name=".map.UserMap"/>
+        <activity android:name=".mvp.business.activity.BusinessMap"/>
+        <activity android:name=".mvp.business.activity.GoodsUpdateActivity"/>
+        <activity android:name=".mvp.base.view.activity.SSWebView"/>
+        <meta-data android:name="com.baidu.lbsapi.API_KEY"
+            android:value="iGgZvqfLD0lYvol69HYAT4r4z5w9usX1"/>
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote">
+        </service>
+    </application>
+
+</manifest>

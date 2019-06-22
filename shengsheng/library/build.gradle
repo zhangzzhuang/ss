@@ -1,0 +1,87 @@
+apply plugin: 'com.android.library'
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.1'
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    //support
+    api "com.android.support:support-annotations:+"
+    api "com.android.support:recyclerview-v7:+"
+    api "com.android.support:appcompat-v7:+"
+    api "com.android.support:support-v4:+"
+    api "com.android.support:design:+"
+
+    //gson
+    api 'com.google.code.gson:gson:2.8.5'
+    //utils
+    api 'com.blankj:utilcode:1.19.4'
+
+
+    //recycler-helper
+    api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:+'
+
+    //smart-tab-layout
+    api 'com.ogaclejapan.smarttablayout:library:1.6.1@aar'
+    api 'com.ogaclejapan.smarttablayout:utils-v4:1.6.1@aar'
+    //refresh-layout
+    api 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.5.1'
+    //retrofit
+    api 'com.squareup.retrofit2:retrofit:2.4.0'
+    api 'com.squareup.retrofit2:converter-gson:2.4.0'
+    api 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
+    //okhttp
+    api 'com.squareup.okhttp3:okhttp:3.11.0'
+    api 'com.squareup.okhttp3:logging-interceptor:3.11.0'
+    //okio
+    api 'com.squareup.okio:okio:2.0.0'
+    //rxJava
+    api 'io.reactivex.rxjava2:rxandroid:2.1.0'
+    api 'io.reactivex.rxjava2:rxjava:2.2.0'
+
+
+    //rxpermission
+    api 'com.github.tbruyelle:rxpermissions:0.10.2'
+    api 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    api 'io.reactivex.rxjava2:rxjava:2.0.5'
+
+
+    //constraint-layout
+    api 'com.android.support.constraint:constraint-layout:2.0.0-alpha2'
+
+
+    //ViewPager
+    api 'com.github.hackware1993:MagicIndicator:1.5.0'
+
+    //SwipeRecyclerView
+    api 'com.yanzhenjie:recyclerview-swipe:1.1.4'
+    api 'com.yqritc:recyclerview-flexibledivider:1.4.0'
+    debugApi 'com.amitshekhar.android:debug-db:1.0.4'
+    api 'com.zhihu.android:matisse:0.5.2-beta3'
+
+    api 'com.drawthink:expandable-recyclerview:0.0.3'
+
+    //密码框
+    api 'com.jungly:gridPasswordView:0.3'
+
+    api 'pl.droidsonroids.gif:android-gif-drawable:1.2.3'
+
+    //下载
+    api 'com.liulishuo.filedownloader:library:1.7.5'
+
+    //阴影
+    api 'com.lijiankun24:shadowlayout:+'
+
+}

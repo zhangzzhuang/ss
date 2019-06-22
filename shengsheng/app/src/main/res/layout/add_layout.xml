@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:background="@drawable/background_login"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp30"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/Goods_add_back"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:background="@drawable/back"/>
+            <TextView
+                android:textColor="@color/white"
+                android:layout_width="0dp"
+                android:layout_weight="8"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="19dp"
+                android:layout_height="wrap_content"
+                android:text="@string/add_Goods" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp30"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:src="@drawable/morentouxiang"
+        android:layout_marginTop="15dp"
+        android:id="@+id/Add_Goods_image"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp" />
+    <TextView
+        android:layout_gravity="center"
+        android:text="(请先键入商品名再上传头像)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:text="@string/Add_Goods_type"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content" />
+    <Spinner
+        android:layout_gravity="center"
+        android:id="@+id/Goods_Add_type"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content">
+    </Spinner>
+    <EditText
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:id="@+id/Add_Goods_name"
+        android:hint="@string/Add_Goods_name"
+        android:layout_width="320dp"
+        android:ems="10"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:id="@+id/Add_Goods_info"
+        android:hint="@string/Add_Goods_info"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/Add_Goods_starTime"
+        android:padding="10dp"
+        android:textSize="15dp"
+        android:text="@string/Add_Goods_starTime"
+        android:textStyle="italic"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_gravity="center"
+        android:background="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="2dp" />
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/Add_Goods_endTime"
+        android:padding="10dp"
+        android:textSize="15dp"
+        android:text="@string/Add_Goods_endTime"
+        android:textStyle="italic"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_gravity="center"
+        android:background="@android:color/black"
+        android:layout_width="320dp"
+        android:layout_height="1dp" />
+    <Button
+        android:layout_gravity="center"
+        android:textSize="18dp"
+        android:textColor="@android:color/white"
+        android:id="@+id/Add_Goods"
+        android:layout_marginTop="15dp"
+        android:text="@string/add_Goods"
+        android:background="@drawable/shape2"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

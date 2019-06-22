@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/setting_list_img"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/address" />
+
+
+
+            <TextView
+                android:id="@+id/setting_list_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="成为商家/进入商家模式"
+                android:layout_marginLeft="15dp"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/background_login2"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_width="350dp"
+
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/txt_followName"
+            android:text="万达购物中心"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+        </TextView>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_marginTop="2dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:layout_gravity="center"
+        android:src="@drawable/wanda"
+        android:id="@+id/img_locationfollow"
+        android:layout_width="350dp"
+        android:layout_height="180dp" />
+
+
+</LinearLayout>

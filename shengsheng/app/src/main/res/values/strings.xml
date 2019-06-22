@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">省省</string>
+    <string name="buiness_images">上传头像</string>
+    <string name="buiness_name">请输入用户名!</string>
+    <string name="buiness_name1">请输入店铺名!</string>
+    <string name="buiness_code">请输入密码!</string>
+    <string name="buiness_confrim">请确认密码！</string>
+    <string name="buiness_phone">请输入手机号！</string>
+    <string name="buiness_address">请输入地址！</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="new_registered">新商家注册</string>
+    <string name="ForgetPassword">忘记密码?</string>
+    <string name="register_Title">注册页</string>
+    <string name="return1">返回</string>
+    <string name="goods_content">商品详情页</string>
+    <string name="collet">收藏人数：</string>
+    <string name="update_goods">修改商品</string>
+    <string name="delete_goods">删除商品</string>
+    <string name="add_Goods">添加商品</string>
+    <string name="Add_Goods_name">输入商品名</string>
+    <string name="Add_Goods_type">选择商品类型</string>
+    <string name="Add_Goods_price">输入商品价格</string>
+    <string name="Add_Goods_info">输入商品的信息</string>
+    <string name="Add_Goods_starTime">请选择开始时间</string>
+    <string name="Add_Goods_endTime">请选择结束时间</string>
+    <string name="title">标题</string>
+    <string name="one_more_exit">再按一次退出程序</string>
+    <string name="success_prompt">注册成功</string>
+    <string name="success_del">删除成功</string>
+    <string name="success_upd">修改成功</string>
+</resources>

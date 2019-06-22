@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPink">#FFD2D2</color>
+    <color name="colorLightGrey">#EAEAEA</color>
+    <color name="colorGrey2">#c69b9b9b</color>
+    <color name="white">#FFFFFF</color>
+    <color name="button1">#e7e3e3</color>
+    <color name="button2">#4d66f6</color>
+    <color name="Forgetpassword">#260bf0</color>
+    <color name="goods_backgroud_color">#f5c803</color>
+    <color name="button_color_update">#0b42f7</color>
+    <color name="backgroundlayout">#d2d2d2</color>
+    <color name="main_gray">#f7f7f7</color>
+    <color name="color_333333">#333333</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="black">#000000</color>
+
+    <color name="net_transparent">#5389D9</color>
+    <color name="color_cd2021">#cd2021</color>
+</resources>

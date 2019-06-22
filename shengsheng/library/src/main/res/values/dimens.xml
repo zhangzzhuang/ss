@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- dp 定义 -->
+    <dimen name="dp0">0dp</dimen>
+    <dimen name="dp0_5">0.5dp</dimen>
+    <dimen name="dp1">1dp</dimen>
+    <dimen name="dp2">2dp</dimen>
+    <dimen name="dp3">3dp</dimen>
+    <dimen name="dp4">4dp</dimen>
+    <dimen name="dp5">5dp</dimen>
+    <dimen name="dp6">6dp</dimen>
+    <dimen name="dp7">7dp</dimen>
+    <dimen name="dp8">8dp</dimen>
+    <dimen name="dp9">9dp</dimen>
+    <dimen name="dp10">10dp</dimen>
+    <dimen name="dp12">12dp</dimen>
+    <dimen name="dp13">13dp</dimen>
+    <dimen name="dp14">14dp</dimen>
+    <dimen name="dp15">15dp</dimen>
+    <dimen name="dp20">20dp</dimen>
+    <dimen name="dp24">24dp</dimen>
+    <dimen name="dp19">19dp</dimen>
+    <dimen name="dp30">30dp</dimen>
+    <dimen name="dp39">39dp</dimen>
+    <dimen name="dp40">40dp</dimen>
+    <dimen name="dp42">42dp</dimen>
+    <dimen name="dp50">50dp</dimen>
+    <dimen name="dp67">67dp</dimen>
+    <dimen name="dp80">80dp</dimen>
+    <dimen name="dp85">85dp</dimen>
+    <dimen name="dp100">100dp</dimen>
+    <dimen name="dp120">120dp</dimen>
+    <dimen name="dp180">180dp</dimen>
+    <dimen name="dp335">335dp</dimen>
+    <dimen name="dp316">316dp</dimen>
+    <dimen name="dp440">440dp</dimen>
+</resources>

@@ -1,0 +1,177 @@
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawerlayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mvp.main.view.activity.MainActivity"
+    android:layout_marginBottom="@dimen/dp40"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/frame_layout"
+            >
+
+            <FrameLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:gravity="center"
+            android:background="@color/white"
+            android:layout_alignBottom="@id/frame_layout"
+            android:id="@+id/frame_item"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal">
+
+
+            <RadioGroup
+                android:background="@drawable/line_top"
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:id="@+id/rbHome"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:button="@null"
+                    android:checked="true"
+                    android:background="@drawable/rabtn_a_selector"
+                    android:textColor="@drawable/rabtn_a_selector"
+                    android:gravity="center" />
+
+                <RadioButton
+                    android:layout_marginLeft="80dp"
+                    android:id="@+id/rbShop"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:button="@null"
+                    android:checked="false"
+                    android:background="@drawable/rabtn_b_selector"
+                    android:textColor="@drawable/rabtn_b_selector"
+                    android:gravity="center"/>
+
+
+            </RadioGroup>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/user_page"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left">
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="255dp"
+            android:orientation="vertical"
+            android:background="@drawable/background_login"
+            android:id="@+id/user_info">
+
+
+            <ImageView
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:src="@drawable/touxiang"
+                android:id="@+id/image_user"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/name_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/qianming_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="简介"
+                android:textColor="@android:color/white" />
+
+
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="签到天数:  "
+                    android:textColor="@android:color/white"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:id="@+id/qiandao_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="x天"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dp"/>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shape"
+                android:layout_marginRight="@dimen/dp20"
+                android:id="@+id/qiandao_user"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center|right"
+                android:gravity="center"
+                android:text="签到"
+                android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/user_info"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/white"
+            android:divider="@null"
+            android:dividerHeight="0dp" />
+
+
+    </RelativeLayout>
+</android.support.v4.widget.DrawerLayout>
+

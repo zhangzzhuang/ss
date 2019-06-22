@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".mvp.main.view.activity.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/background_login"
+        android:gravity="center">
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp30"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:text="发 现"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/ivsousuo"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ssdk_country_search_icon" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:onClick="clickEvent"
+            android:id="@+id/yifu"
+            android:background="@android:color/transparent"
+            android:textSize="16dp"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:text="衣服" />
+
+        <Button
+            android:onClick="clickEvent"
+            android:id="@+id/shuma"
+            android:textSize="18dp"
+            android:background="@android:color/transparent"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="15dp"
+            android:text="数码" />
+
+        <Button
+            android:onClick="clickEvent"
+            android:id="@+id/meishi"
+            android:textSize="20dp"
+            android:background="@android:color/transparent"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="15dp"
+            android:text="美食" />
+
+        <Button
+            android:onClick="clickEvent"
+            android:id="@+id/jiaju"
+            android:textSize="18dp"
+            android:background="@android:color/transparent"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="15dp"
+            android:text="家具"/>
+
+        <Button
+            android:id="@+id/meizhuang"
+            android:textSize="16dp"
+            android:background="@android:color/transparent"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="15dp"
+            android:onClick="clickEvent"
+            android:text="美妆"/>
+    </LinearLayout>
+
+
+    <View
+        android:background="@color/backgroundlayout"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshDiscovery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.example.lenovo.myapplication.utils.DefaultRefreshHeader
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp80">
+        </com.example.lenovo.myapplication.utils.DefaultRefreshHeader>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/frag_follow_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+
+        <com.example.lenovo.myapplication.utils.DefaultRefreshFooter
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp80">
+        </com.example.lenovo.myapplication.utils.DefaultRefreshFooter>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+
+</LinearLayout>
